@@ -20,6 +20,11 @@ export const ui = {
             link: '/'
           },
           {
+            icon: 'table_chart',
+            title: 'Grid System',
+            link: '/grid'
+          },
+          {
             icon: 'settings',
             title: 'Settings',
             link: '/settings'

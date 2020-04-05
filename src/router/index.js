@@ -2,6 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 import Settings from '../views/settings/settings.vue'
+import Grid from '../views/grid/Grid.vue'
 
 Vue.use(VueRouter)
 
@@ -15,6 +16,11 @@ Vue.use(VueRouter)
     path: '/settings',
     name: 'settings',
     component: Settings
+  },
+  {
+    path: '/grid',
+    name: 'grid',
+    component: Grid
   }
 ]
 
