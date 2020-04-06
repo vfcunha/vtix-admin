@@ -45,12 +45,12 @@
 
 
 <script>
-  import MainLayout from '../../layouts/main';
+  // import MainLayout from '../../layouts/main';
 
   export default {
-    created () {
-      this.$emit('update:layout', MainLayout);
-    },
+    // created () {
+    //   this.$emit('update:layout', MainLayout);
+    // },
     data() {
       return {
         

@@ -25,6 +25,11 @@ export const ui = {
             link: '/grid'
           },
           {
+            icon: 'pie_chart',
+            title: 'Charts',
+            link: '/charts'
+          },
+          {
             icon: 'settings',
             title: 'Settings',
             link: '/settings'

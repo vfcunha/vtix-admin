@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 import Settings from '../views/settings/settings.vue'
 import Grid from '../views/grid/Grid.vue'
+import Charts from '../views/charts/Charts.vue'
+
 
 Vue.use(VueRouter)
 
@@ -16,6 +18,11 @@ Vue.use(VueRouter)
     path: '/settings',
     name: 'settings',
     component: Settings
+  },
+  {
+    path: '/charts',
+    name: 'charts',
+    component: Charts
   },
   {
     path: '/grid',

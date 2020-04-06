@@ -7,9 +7,10 @@
 </template>
 
 <script>
+import MainLayout from './layouts/main';
 
 export default {
-  updated () {
+  created () {
     this.$vuetify.theme.dark = this.config.dark
   },
   computed: {
@@ -20,7 +21,7 @@ export default {
     }
   },
   data: () => ({
-    layout: 'div'
+    layout: MainLayout
   })
 }
 </script>

@@ -7,7 +7,7 @@
 <script>
 export default {
   props: {
-    config: { type: Object, default: {inset: true} }
+    config: { type: Object, default: new Object({inset: true}) }
   }
 }
 </script>
