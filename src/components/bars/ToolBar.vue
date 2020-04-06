@@ -5,6 +5,14 @@
     @click.stop="config.model = !config.model"
   ></v-app-bar-nav-icon>
   <v-toolbar-title>Vuetify-Admin</v-toolbar-title>
+  <v-spacer></v-spacer>
+      <v-btn icon>
+        <v-icon>alert</v-icon>
+      </v-btn>
+
+      <v-btn icon>
+        <v-icon>more_vert</v-icon>
+      </v-btn>
 </v-app-bar>
 </template>
 

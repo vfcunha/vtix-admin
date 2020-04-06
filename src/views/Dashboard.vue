@@ -1,18 +1,107 @@
 <template>
   <v-container>
-    Dashboard
+    <v-row>
+      <v-col md="4" >
+        <v-card class="pa-2" outlined tile>
+        <v-list-item avatar>
+          <v-list-item-avatar color="primary">
+              <v-icon>cloud</v-icon>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <v-list-item-title>Application</v-list-item-title>
+            </v-list-item-content>
+            <v-list-item-action>
+              <v-btn icon >
+                <v-icon v-html="'mdi-arrow-right'"></v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+          </v-card>
+      </v-col>
+
+      <v-col md="4">
+        <v-card class="pa-2" outlined tile>
+        <v-list-item avatar>
+          <v-list-item-avatar tile color="red">
+              <v-icon>alarm</v-icon>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <v-list-item-title>Application</v-list-item-title>
+            </v-list-item-content>
+            <v-list-item-action>
+              <v-btn icon >
+                <v-icon v-html="'mdi-arrow-right'"></v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+          </v-card>
+      </v-col>
+
+      <v-col md="4">
+        <v-card class="pa-2" outlined tile>
+        <v-list-item avatar>
+          <v-list-item-avatar color="orange">
+              <v-icon>shopping_cart</v-icon>
+            </v-list-item-avatar>
+            <v-list-item-content>
+              <v-list-item-title>Application</v-list-item-title>
+            </v-list-item-content>
+            <v-list-item-action>
+              <v-btn icon >
+                <v-icon v-html="'mdi-arrow-right'"></v-icon>
+              </v-btn>
+            </v-list-item-action>
+          </v-list-item>
+          </v-card>
+      </v-col>
+    </v-row>
+
+
+    <v-row>
+      <v-col md="6">
+        <line-chart/>
+      </v-col>
+
+
+      <v-col md="6">
+        <v-card>
+          <v-toolbar>
+            <v-tabs v-model="tab" fixed-tabs>
+              <v-tab href="#tab-1">
+                Contacts
+              </v-tab>
+              <v-tab href="#tab-2">
+                Messages
+              </v-tab>
+            </v-tabs>
+          </v-toolbar>
+          <v-tabs-items v-model="tab">
+            <v-tab-item :value="'tab-1'">
+              <contacts/>
+            </v-tab-item>
+            <v-tab-item :value="'tab-2'">
+              <messages/>
+            </v-tab-item>
+          </v-tabs-items>
+        </v-card>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-  // import MainLayout from '../layouts/main';
+  import LineChart from './charts/LineChart.vue'
+  import Contacts from '@/components/lists/Contacts.vue'
+  import Messages from '@/components/lists/Messages.vue'
 
   export default {
-    // created () {
-    //   this.$emit('update:layout', MainLayout);
-    // },
+    components: {
+      LineChart,
+      Contacts,
+      Messages
+    },
     data: () => ({
-      
+      tab: null
     })
   }
 </script>

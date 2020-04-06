@@ -38,7 +38,8 @@
           datasets: [
             {
               label: 'Data 1',
-              backgroundColor: ['#f87979', '#f80025', '#007979'],
+              borderColor: ['#f87979', '#f80025', '#2590dd'],
+              backgroundColor: ['#f8797980', '#f8002580', '#2590dd80'],
               data: [this.getRandomInt(), this.getRandomInt(), this.getRandomInt()]
             }
           ]
