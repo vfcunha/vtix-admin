@@ -5,6 +5,7 @@ import Settings from '../views/settings/settings.vue'
 import Grid from '../views/grid/Grid.vue'
 import Charts from '../views/charts/Charts.vue'
 import Forms from '../views/forms/Forms'
+import Tables from '../views/tables/Tables'
 
 
 Vue.use(VueRouter)
@@ -29,6 +30,11 @@ Vue.use(VueRouter)
     path: '/forms',
     name: 'forms',
     component: Forms
+  },
+  {
+    path: '/tables',
+    name: 'tables',
+    component: Tables
   },
   {
     path: '/grid',

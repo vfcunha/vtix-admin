@@ -13,7 +13,7 @@
   >
     <v-toolbar>
         <v-list >
-          <v-list-item avatar :class="(config.miniVariant || config.expandOnHover) && 'px-0'">
+          <v-list-item :class="(config.miniVariant || config.expandOnHover) && 'px-0'">
             <v-list-item-avatar>
               <img src="@/assets/logo.png" >
             </v-list-item-avatar>

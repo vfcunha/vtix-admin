@@ -3,7 +3,7 @@
     <v-row>
       <v-col md="4" >
         <v-card class="pa-2" outlined tile>
-        <v-list-item avatar>
+        <v-list-item>
           <v-list-item-avatar color="primary">
               <v-icon>cloud</v-icon>
             </v-list-item-avatar>
@@ -21,7 +21,7 @@
 
       <v-col md="4">
         <v-card class="pa-2" outlined tile>
-        <v-list-item avatar>
+        <v-list-item>
           <v-list-item-avatar tile color="red">
               <v-icon>alarm</v-icon>
             </v-list-item-avatar>
@@ -39,7 +39,7 @@
 
       <v-col md="4">
         <v-card class="pa-2" outlined tile>
-        <v-list-item avatar>
+        <v-list-item>
           <v-list-item-avatar color="orange">
               <v-icon>shopping_cart</v-icon>
             </v-list-item-avatar>

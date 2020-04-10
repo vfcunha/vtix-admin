@@ -25,6 +25,11 @@ export const ui = {
             link: '/forms'
           },
           {
+            icon: 'ballot',
+            title: 'Tables',
+            link: '/tables'
+          },
+          {
             icon: 'table_chart',
             title: 'Grid System',
             link: '/grid'
