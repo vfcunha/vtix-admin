@@ -20,6 +20,11 @@ export const ui = {
             link: '/'
           },
           {
+            icon: 'assignment',
+            title: 'Forms',
+            link: '/forms'
+          },
+          {
             icon: 'table_chart',
             title: 'Grid System',
             link: '/grid'
@@ -37,7 +42,8 @@ export const ui = {
         ]
       },
       footerBar: {
-        inset: false
+        inset: false,
+        author: 'Vítor Cunha'
       }
     }
   },

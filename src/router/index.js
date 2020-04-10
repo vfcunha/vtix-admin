@@ -4,6 +4,7 @@ import Dashboard from '../views/Dashboard.vue'
 import Settings from '../views/settings/settings.vue'
 import Grid from '../views/grid/Grid.vue'
 import Charts from '../views/charts/Charts.vue'
+import Forms from '../views/forms/Forms'
 
 
 Vue.use(VueRouter)
@@ -23,6 +24,11 @@ Vue.use(VueRouter)
     path: '/charts',
     name: 'charts',
     component: Charts
+  },
+  {
+    path: '/forms',
+    name: 'forms',
+    component: Forms
   },
   {
     path: '/grid',

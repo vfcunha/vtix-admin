@@ -1,6 +1,6 @@
 <template>
   <v-footer :inset="config.inset" app>
-    <span class="px-3">&copy; {{ new Date().getFullYear() }}</span>
+    <span class="px-3">&copy; {{ new Date().getFullYear() }} by {{ config.author }}</span>
   </v-footer>
 </template>
 
