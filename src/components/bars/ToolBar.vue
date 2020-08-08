@@ -4,7 +4,7 @@
     v-if="config.type !== 'permanent'"
     @click.stop="config.model = !config.model"
   ></v-app-bar-nav-icon>
-  <v-toolbar-title>Vuetify-Admin</v-toolbar-title>
+  <v-toolbar-title>Vtix-Admin</v-toolbar-title>
   <v-spacer></v-spacer>
       <v-btn icon>
         <v-icon>alert</v-icon>

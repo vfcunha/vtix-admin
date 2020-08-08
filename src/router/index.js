@@ -3,9 +3,12 @@ import VueRouter from 'vue-router'
 import Dashboard from '../views/Dashboard.vue'
 import Settings from '../views/settings/settings.vue'
 import Grid from '../views/grid/Grid.vue'
-import Charts from '../views/charts/Charts.vue'
+import Charts from '../views/charts/chartjs/Charts.vue'
+import GoogleCharts from '@/views/charts/google/Charts.vue'
 import Forms from '../views/forms/Forms'
 import Tables from '../views/tables/Tables'
+import Signin from '../views/auth/Signin'
+
 
 
 Vue.use(VueRouter)
@@ -22,9 +25,14 @@ Vue.use(VueRouter)
     component: Settings
   },
   {
-    path: '/charts',
+    path: '/charts/chartjs',
     name: 'charts',
     component: Charts
+  },
+  {
+    path: '/charts/google',
+    name: 'google-charts',
+    component: GoogleCharts
   },
   {
     path: '/forms',
@@ -40,6 +48,11 @@ Vue.use(VueRouter)
     path: '/grid',
     name: 'grid',
     component: Grid
+  },
+  {
+    path: '/signin',
+    name: 'signin',
+    component: Signin
   }
 ]
 

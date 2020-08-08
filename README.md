@@ -1,4 +1,4 @@
-# vuetify-admin
+# vtix-admin
 
 ## Project setup
 ```

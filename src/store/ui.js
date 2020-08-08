@@ -37,7 +37,16 @@ export const ui = {
           {
             icon: 'pie_chart',
             title: 'Charts',
-            link: '/charts'
+            items: [
+              { 
+                title: 'ChartJs',
+                link: '/charts/chartjs'
+              },
+              {
+                title: 'Google Charts',
+                link: '/charts/google'
+              }
+            ]
           },
           {
             icon: 'settings',
