@@ -2,6 +2,12 @@
   <v-container>
     <window-card title="Table">
 
+      <Dialog slot="left" :show="showDialog" 
+        :item="editedItem" :itemIndex="editedIndex" 
+        @onClose="onCloseDialog" 
+        @onSave="onSaveItem"
+        @onUpdate="onUpdateItem"/>
+
       <template slot="right">
         <v-spacer></v-spacer>
         <v-text-field
@@ -11,13 +17,9 @@
           single-line
           hide-details
         ></v-text-field>
-        <Dialog :show="showDialog" 
-          :item="editedItem" :itemIndex="editedIndex" 
-          @onClose="onCloseDialog" 
-          @onSave="onSaveItem"
-          @onUpdate="onUpdateItem"/>
+        
+        <filters/>
       </template>
-
       
       <v-data-table slot="content"
         show-select
@@ -51,10 +53,12 @@
 
 <script>
 import Dialog from './Dialog'
+import Filters from './Filters'
 
   export default {
     components: {
-      Dialog
+      Dialog,
+      Filters
     },
     data: () => ({
       showDialog: false,
