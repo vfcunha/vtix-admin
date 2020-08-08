@@ -64,33 +64,27 @@
 
 
       <v-col md="6">
-        <v-card>
-          <v-toolbar>
-            <v-tabs v-model="tab" fixed-tabs>
-              <v-tab href="#tab-1">
-                Contacts
-              </v-tab>
-              <v-tab href="#tab-2">
-                Messages
-              </v-tab>
-            </v-tabs>
-          </v-toolbar>
-          <v-tabs-items v-model="tab">
-            <v-tab-item :value="'tab-1'">
-              <contacts/>
-            </v-tab-item>
-            <v-tab-item :value="'tab-2'">
-              <messages/>
-            </v-tab-item>
-          </v-tabs-items>
-        </v-card>
+        <tab-card>
+          <v-tab slot="tab" href="#tab-1">
+            Contacts
+          </v-tab>
+          <v-tab slot="tab" href="#tab-2">
+            Messages
+          </v-tab>
+          <v-tab-item slot="tab-item" :value="'tab-1'">
+            <contacts/>
+          </v-tab-item>
+          <v-tab-item slot="tab-item" :value="'tab-2'">
+            <messages/>
+          </v-tab-item>
+        </tab-card>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-  import LineChart from './charts/LineChart.vue'
+  import LineChart from './charts/chartjs/LineChart.vue'
   import Contacts from '@/components/lists/Contacts.vue'
   import Messages from '@/components/lists/Messages.vue'
 

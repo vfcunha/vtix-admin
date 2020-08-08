@@ -3,14 +3,11 @@
     <v-app-bar >
       <v-toolbar-title>Line Chart</v-toolbar-title>
       <v-spacer></v-spacer>
-      <v-btn icon><v-icon></v-icon></v-btn>
+      <v-btn icon @click="fillData()"><v-icon>refresh</v-icon></v-btn>
     </v-app-bar>
     <v-card-text>
       <line-chart :chart-data="datacollection"></line-chart>
     </v-card-text>
-    <v-card-actions>
-      <v-btn text @click="fillData()">Randomize</v-btn>
-    </v-card-actions>
   </v-card>
 </template>
 
